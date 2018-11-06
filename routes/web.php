@@ -23,3 +23,4 @@ Route::get('/test', function () {
 Route::get('/test/hola', function () {
     return "Hola!";
 })->name('hola');
+
