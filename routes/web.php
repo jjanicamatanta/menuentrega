@@ -12,15 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
+Route::get('food','MenuController@index')->name('food.index');
 
-Route::get('/test', function () {
-    return redirect()->route('hola');
-});
 
-Route::get('/test/hola', function () {
-    return "Hola!";
-})->name('hola');
+
 
